@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AppRoutingModule } from './app-router.module';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -12,6 +15,12 @@ import { CategoryComponent } from './components/category/category.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductsComponent } from './components/products/products.component';
+import { LayoutAdminComponent } from './pages/layout-admin/layout-admin.component';
+import { LayoutClientComponent } from './pages/layout-client/layout-client.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { ProductListComponent } from './pages/product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +34,19 @@ import { ProductsComponent } from './components/products/products.component';
     CategoryComponent,
     SliderComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    LayoutAdminComponent,
+    LayoutClientComponent,
+    SigninComponent,
+    SignupComponent,
+    FilterComponent,
+    ProductListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
