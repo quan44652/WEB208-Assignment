@@ -1,0 +1,8 @@
+.container{
+  width: 1200px;
+}
+.bg-secondary-subtle:hover{
+  color: white;
+  background-color: #00483d !important;
+}
+
