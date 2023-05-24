@@ -6,6 +6,7 @@ import { DetailComponent } from './pages/detail/detail.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ProductListComponent } from './pages/product-list/product-list.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 const routes: Routes = [
     {path:"",component:LayoutClientComponent, children: [
@@ -13,6 +14,7 @@ const routes: Routes = [
         {path:"products",component:ProductListComponent},
         {path:"products/:id",component:DetailComponent}
     ]},
+    {path:"cart", component:CartComponent},
     {path:'signin',component:SigninComponent},
     {path:'signup',component:SignupComponent},
 ]; // sets up routes constant where you define your routes

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { NgxTippyProps } from 'ngx-tippy-wrapper';
 import {ProductService} from '../../services/product.service' 
 
@@ -8,9 +8,12 @@ import {ProductService} from '../../services/product.service'
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
+  @Input() title:string = '';
   products:any = []
  constructor(private productService:ProductService){}
-  ngOnInit () {
+  ngOnInit () {    
+    console.log(this.title);
+    
     this.productService.getProducts().subscribe(data => this.products = data) 
   }
 

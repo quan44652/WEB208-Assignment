@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="container">
-        <h4 class="title">APPLE AUTHORISED RESELLER</h4>
+        <h4 *ngIf="title != ''" class="title">{{title}}</h4>
         <div class="list-products">
             <div *ngFor="let item of products" class="list-products--item">
                 <div class="wrapper-product">
@@ -12,7 +12,8 @@
                             alt>
                     </div>
                     <a href="/" class="name">{{item.name}}</a>
-                    <p class="price">{{item.priceNew}} ₫ <span>{{item.priceOld}}
+                    <p class="price">{{item.priceNew | number }} ₫ <span>{{item.priceOld
+                            | number}}
                             ₫</span></p>
                     <div class="note">
                         <p *ngIf="item.promote.length > 0"><span>KM</span>{{item.promote[0].slice(" ",40)}}
@@ -30,105 +31,6 @@
                     </a>
                 </div>
             </div>
-            <div class="list-products--item">
-                <div class="wrapper-product">
-                    <div class="sticker">
-                        <img
-                            src="https://hoanghamobile.com/Content/web/sticker/hot.png"
-                            alt>
-                    </div>
-                    <div class="avatar">
-                        <img src="../../../assets/products/1111 (1).webp"
-                            alt>
-                    </div>
-                    <a href="/" class="name">iPhone 11 (64GB) - Chính hãng VN/A</a>
-                    <p class="price">10190000 ₫ <span>19990000 ₫</span></p>
-                    <p class="note"><span>KM</span> Ưu đãi đến 300.000đ khi
-                        mở
-                        Ví
-                        hoặc ... <strong> và 5 km khác</strong></p>
-                </div>
-
-                <div class="promote">
-                    <a href>
-                        <ul>
-                            <li><p class="note"><span>KM</span> Ưu đãi đến
-                                    300.000đ khi mở Ví hoặc thanh toán qua VNPAY</p></li>
-                            <li><p class="note"><span>KM</span> Giảm thêm tới
-                                    1.000.000đ khi Thu cũ - Lên đời iPhone 11 |
-                                    12 | 13 Series</p></li>
-                            <li><p class="note"><span>KM</span> Giảm thêm tới
-                                    800.000đ khi mở thẻ tín dụng TPBank EVO -
-                                    Duyệt nhanh chỉ 15 phút, LH Cửa hàng hoặc
-                                    19002091 để được hỗ trợ</p></li>
-                        </ul>
-                    </a>
-                </div>
-            </div>
-            <div class="list-products--item">
-                <div class="wrapper-product">
-                    <div class="sticker">
-                        <img src="../../../assets/images/apple.png" alt>
-                    </div>
-                    <div class="avatar">
-                        <img src="../../../assets/products/1111 (1).webp"
-                            alt>
-                    </div>
-                    <a href="/" class="name">iPhone 11 (64GB) - Chính hãng VN/A</a>
-                    <p class="price">10190000 ₫ <span>19990000 ₫</span></p>
-                    <p class="note"><span>KM</span> Ưu đãi đến 300.000đ khi
-                        mở
-                        Ví
-                        hoặc ... <strong> và 5 km khác</strong></p>
-                </div>
-
-                <div class="promote">
-                    <a href>
-                        <ul>
-                            <li><p class="note"><span>KM</span> Ưu đãi đến
-                                    300.000đ khi mở Ví hoặc thanh toán qua VNPAY</p></li>
-                            <li><p class="note"><span>KM</span> Giảm thêm tới
-                                    1.000.000đ khi Thu cũ - Lên đời iPhone 11 |
-                                    12 | 13 Series</p></li>
-                            <li><p class="note"><span>KM</span> Giảm thêm tới
-                                    800.000đ khi mở thẻ tín dụng TPBank EVO -
-                                    Duyệt nhanh chỉ 15 phút, LH Cửa hàng hoặc
-                                    19002091 để được hỗ trợ</p></li>
-                        </ul>
-                    </a>
-                </div>
-            </div>
-            <div class="list-products--item">
-                <div class="wrapper-product">
-                    <div class="sticker">
-                        <img src="../../../assets/images/apple.png" alt>
-                    </div>
-                    <div class="avatar">
-                        <img src="../../../assets/products/1111 (1).webp"
-                            alt>
-                    </div>
-                    <a href="/" class="name">iPhone 11 (64GB) - Chính hãng VN/A</a>
-                    <p class="price">10190000 ₫ <span>19990000 ₫</span></p>
-                    <p class="note"><span>KM</span> Ưu đãi đến 300.000đ khi
-                        mở
-                        Ví
-                        hoặc ... <strong> và 5 km khác</strong></p>
-                </div>
-
-                <div class="promote">
-                    <a href>
-                        <ul>
-                            <li><p class="note"><span>KM</span> Ưu đãi đến
-                                    300.000đ khi mở Ví hoặc thanh toán qua VNPAY</p></li>
-                            <li><p class="note"><span>KM</span> Giảm thêm tới
-                                    1.000.000đ khi Thu cũ - Lên đời iPhone 11 |
-                                    12 | 13 Series</p></li>
-
-                        </ul>
-                    </a>
-                </div>
-            </div>
-
         </div>
     </div>
 

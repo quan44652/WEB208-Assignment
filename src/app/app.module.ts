@@ -21,6 +21,8 @@ import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { ProductListComponent } from './pages/product-list/product-list.component';
+import { TopNavigateComponent } from './components/top-navigate/top-navigate.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ProductListComponent } from './pages/product-list/product-list.componen
     SigninComponent,
     SignupComponent,
     FilterComponent,
-    ProductListComponent
+    ProductListComponent,
+    TopNavigateComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

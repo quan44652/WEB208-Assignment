@@ -19,7 +19,7 @@
 
 .auth-form {
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     border-radius: 10px;
     overflow: hidden;
 }

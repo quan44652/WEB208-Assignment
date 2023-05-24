@@ -1,5 +1,5 @@
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: #00483d;
     padding: 24px;
@@ -18,6 +18,7 @@
 
 
 
+
 .list-content h2 {
     font-size: 16px;
     color: #fff;
@@ -26,6 +27,7 @@
 
 .list-content ul {
     list-style: none;
+    padding-left: 0;
 
 }
 

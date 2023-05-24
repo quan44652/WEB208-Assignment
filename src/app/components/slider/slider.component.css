@@ -1,0 +1,26 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel {
+    min-height: 400px;
+}
+
+.quick-sales {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -6px;
+    margin-top: 12px;
+
+}
+
+.quick-sales--item {
+    width: 25%;
+    margin: 0 6px;
+}
+
+.quick-sales--item img {
+    width: 100%;
+
+}
