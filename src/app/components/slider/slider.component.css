@@ -1,5 +1,5 @@
-.container{
-  width: 1200px;
+.wrapper{
+  width: 1200px !important;
 }
 .bg-secondary-subtle:hover{
   color: white;
